@@ -1,45 +1,48 @@
 # 🚀 Space Mission Simulator
 
-Space Mission Simulator is a space survival game made using Core Java.
+A space survival game built using Core Java.
 
-In this game, players can explore planets, control a spaceship, collect resources, and complete missions. They also need to manage fuel, oxygen, and health to survive in space.
+In this game, players explore different planets, manage a spaceship, collect resources, and complete missions. They must manage fuel, oxygen, and health carefully to survive their journey through space.
 
 ## 🌌 About the Project
 
-We decided to make this game as a team project to practice Java and understand how it can be used to create a game.
+Space Mission Simulator is a team project created to practice Java programming and Object-Oriented Programming (OOP).
 
-The game is based on space exploration and survival. Players have to make choices, manage resources, and complete different tasks during their journey.
+We wanted to build a game where players can explore space, make decisions, and complete different challenges. The game also helps us understand how Java classes, objects, and other programming concepts work together in a real project.
 
 ## ✨ Features
 
-- Control the spaceship and manage player status.
-- Explore different planets.
-- Keep track of fuel, oxygen, and health.
-- Collect resources during exploration.
-- Encounter aliens and fight them.
-- Complete missions and earn points.
-- Make choices that affect the game.
+- 🚀 Manage the player and spaceship.
+- 🌍 Explore different planets.
+- ⛽ Monitor fuel, oxygen, and health.
+- 💎 Collect resources during exploration.
+- 👽 Encounter aliens and face challenges.
+- 🎯 Complete missions and earn points.
+- 🔀 Make decisions that affect mission progress.
+- 🏆 Track progress and work towards completing the mission.
 
 ## 🛠️ Technologies Used
 
-- **Language:** Core Java
-- **OOP Concepts:** Classes, Objects, Inheritance, and Polymorphism
+- **Programming Language:** Core Java
+- **Object-Oriented Programming:** Classes, Objects, Inheritance, and Polymorphism
 - **Data Structures:** Arrays and ArrayList
-- **Input:** Scanner
+- **User Input:** Scanner
 - **Random Events:** Random class
 - **Error Handling:** Exception Handling
 
-## 🧠 What We Learn
+## 🧠 Java Concepts Used
 
-While working on this project, we get to practice:
+This project gives us an opportunity to practice:
 
-- Creating classes and objects.
-- Using constructors and methods.
-- Applying inheritance and polymorphism.
-- Working with arrays and ArrayList.
-- Using loops and conditional statements.
-- Handling random events.
-- Finding and fixing errors in Java.
+- Classes and Objects
+- Constructors and Methods
+- Inheritance and Polymorphism
+- Arrays and ArrayList
+- Conditional Statements and Loops
+- Random Number Generation
+- Exception Handling
+
+These concepts are included according to the implementation of the game.
 
 ## 📁 Project Structure
 
@@ -59,60 +62,77 @@ SpaceMissionSimulator/
 └── README.md
 ```
 
-*The structure may change as we continue working on the project.*
+*The structure may change as the project develops.*
 
 ## 🎮 How to Play
 
-1. Run the game.
-2. Start your space mission.
+1. Start the game.
+2. Begin your space mission.
 3. Choose a planet to explore.
 4. Manage your fuel, oxygen, and health.
-5. Collect resources and explore new places.
-6. Handle alien encounters and other events.
-7. Complete missions and earn points.
-8. Try to complete your mission and survive.
+5. Explore locations and collect resources.
+6. Make decisions when unexpected events occur.
+7. Complete mission objectives and earn points.
+8. Try to finish your mission successfully.
 
 ## ▶️ How to Run
 
-**Requirement:** Java Development Kit (JDK).
+**Requirements:** Java Development Kit (JDK) installed on your computer.
 
-1. Download or clone the repository.
-2. Open the project in a Java IDE.
-3. Make sure the source files are in the correct folder.
+1. Clone or download this repository.
+2. Open the project in a Java IDE, such as VS Code, Eclipse, or IntelliJ IDEA.
+3. Make sure all source files are in the correct folder.
 4. Compile the Java files.
 5. Run `Main.java`.
-6. Follow the instructions shown on the console.
+6. Follow the instructions displayed in the console.
 
-## 👥 Team Members
+*The exact steps may depend on the final project setup.*
 
-| Member | Work |
+## 👥 Team Members and Responsibilities
+
+| Team Member | Responsibility |
 |---|---|
-| Member 1 | Player and spaceship |
-| Member 2 | Planets and exploration |
-| Member 3 | Aliens and combat |
-| Member 4 | Missions and game control |
+| Member 1 | Player and spaceship management |
+| Member 2 | Planet and exploration system |
+| Member 3 | Alien encounters and combat |
+| Member 4 | Mission system and game control |
 
-## 🔮 Future Plans
+*Replace the member labels with your team members' names if required.*
 
-In the future, we would like to:
+## 🎯 Learning Outcomes
 
-- Add more planets to explore.
-- Create new missions.
-- Add spaceship upgrades.
-- Introduce more alien types.
-- Add an option to save game progress.
-- Create a high-score system.
+Through this project, we aim to:
+
+- Improve our understanding of Core Java.
+- Learn how to organize code into different classes.
+- Practice important OOP concepts.
+- Work with arrays, ArrayList, and user input.
+- Understand game logic and decision-making.
+- Improve our debugging and problem-solving skills.
+- Gain experience working together on a Java project.
+
+## 🔮 Future Improvements
+
+We would like to improve the game by adding:
+
+- More planets and missions.
+- Spaceship upgrades.
+- Different types of aliens.
+- Save and load functionality.
+- A high-score system.
+- More random events and challenges.
 
 ## 📌 Project Details
 
-- **Name:** Space Mission Simulator
-- **Language:** Java
-- **Type:** Console-Based Game
-- **Project:** Academic Team Project
+- **Project Name:** Space Mission Simulator
+- **Project Type:** Academic Team Project
+- **Programming Language:** Core Java
+- **Application Type:** Console-Based Game
+- **Difficulty Level:** Intermediate Beginner
 - **Team Size:** 4 Members
 
 ---
 
-We are making this project to improve our Java skills and learn how to build a game together.
+This project is an opportunity for us to learn Java by building something interactive and fun.
 
-🚀 *Explore space, collect resources, and complete your mission!*
+🚀 *Explore planets, manage your resources, and complete your mission!*
