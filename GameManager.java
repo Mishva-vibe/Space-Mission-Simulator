@@ -205,3 +205,28 @@ private void displayMenu() {
         Mission selected = null;
 
         for (Mission mission : missions) {
+
+        if (mission.getMissionId() == missionId) {
+                selected = mission;
+                break;
+            }
+        }
+
+        if (selected == null) {
+            System.out.println("Mission not found.");
+            return;
+        }
+
+        dao.updateMissionStatus(
+                player.getPlayerId(),
+                selected.getMissionId(),
+                "IN_PROGRESS");
+
+        System.out.println("Mission started: "
+                + selected.getMissionName());
+
+        boolean success = explorationSystem.explore(
+                player, selected.getPlanetName());
+
+        if (success && player.getSpaceship().isOperational()) {
+            player.addScore(selected.getRewardPoints());
