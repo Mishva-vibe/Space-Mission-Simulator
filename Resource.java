@@ -20,3 +20,8 @@ public class Resource {
             quantity += amount;
         }
     }
+@Override
+    public String toString() {
+        return resourceName + " : " + quantity;
+    }
+}
