@@ -51,6 +51,31 @@ int choice;
 
                 ship.takeDamage(alien.getAttackPower());
 
+                
+
                 System.out.println("The alien attacked your spaceship!");
             } else if (choice == 2) {
                 int damage = Math.max(1, alien.getAttackPower() / 3);
+
+            ship.takeDamage(damage);
+
+                System.out.println("Defence reduced the damage to "
+                        + damage + ".");
+            } else if (choice == 3) {
+                System.out.println("You escaped from the alien.");
+                ship.consumeFuel(10);
+                return false;
+            } else {
+                System.out.println("Invalid choice.");
+            }
+
+            ship.displayStatus();
+        }
+
+        if (ship.getHealth() <= 0) {
+            System.out.println("Your spaceship has been destroyed!");
+        }
+
+        return false;
+    }
+}
