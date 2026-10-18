@@ -63,3 +63,14 @@ public class Spaceship {
         oxygen -= amount;
         return true;
     }
+
+    public void takeDamage(int damage) {
+        if (damage > 0) {
+            health = Math.max(0, health - damage);
+        }
+
+        if (health == 0) {
+            System.out.println("Spaceship critically damaged!");
+        }
+    }
+
