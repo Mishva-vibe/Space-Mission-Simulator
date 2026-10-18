@@ -8,10 +8,10 @@ public class Spaceship {
     private ArrayList<Resource> inventory;
 
     public Spaceship(String spaceshipName) {
-      this(spaceshipName, 100,100, 100);
+        this(spaceshipName, 100, 100, 100);
     }
 
-     public Spaceship(String spaceshipName, int fuel,
+    public Spaceship(String spaceshipName, int fuel,
                      int oxygen, int health) {
         this.spaceshipName = spaceshipName;
         this.fuel = Math.max(0, Math.min(100, fuel));
@@ -20,7 +20,7 @@ public class Spaceship {
         inventory = new ArrayList<>();
     }
 
-     public String getSpaceshipName() {
+    public String getSpaceshipName() {
         return spaceshipName;
     }
 
@@ -34,5 +34,13 @@ public class Spaceship {
 
     public int getHealth() {
         return health;
+    }
+
+    public void displayStatus() {
+        System.out.println("\n--- SPACESHIP STATUS ---");
+        System.out.println("Name: " + spaceshipName);
+        System.out.println("Fuel: " + fuel);
+        System.out.println("Oxygen: " + oxygen);
+        System.out.println("Health: " + health);
     }
 
