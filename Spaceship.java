@@ -74,3 +74,31 @@ public class Spaceship {
         }
     }
 
+    public void repair(int amount) {
+        if (amount > 0) {
+            health = Math.min(100, health + amount);
+        }
+    }
+
+    public void refuel(int amount) {
+        if (amount > 0) {
+            fuel = Math.min(100, fuel + amount);
+        }
+    }
+
+    public void replenishOxygen(int amount) {
+        if (amount > 0) {
+            oxygen = Math.min(100, oxygen + amount);
+        }
+    }
+
+    public void collectResource(String resourceName) {
+        for (Resource resource : inventory) {
+            if (resource.getResourceName().equalsIgnoreCase(resourceName)) {
+                resource.addQuantity(1);
+                System.out.println("Resource quantity increased!");
+                return;
+            }
+        }
+
+    
