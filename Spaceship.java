@@ -101,4 +101,43 @@ public class Spaceship {
             }
         }
 
-    
+            inventory.add(new Resource(resourceName, 1));
+        System.out.println(resourceName + " collected!");
+    }
+
+    public void displayInventory() {
+        System.out.println("\n--- INVENTORY ---");
+
+        if (inventory.isEmpty()) {
+            System.out.println("Inventory is empty.");
+            return;
+        }
+
+        for (Resource resource : inventory) {
+            System.out.println(resource);
+        }
+    }
+
+    public boolean useResource(String resourceName) {
+        for (int i = 0; i < inventory.size(); i++) {
+            Resource resource = inventory.get(i);
+
+            if (resource.getResourceName().equalsIgnoreCase(resourceName)
+                    && resource.getQuantity() > 0) {
+                inventory.remove(i);
+                if (resource.getQuantity() > 1) {
+                    resource = new Resource(resource.getResourceName(),
+                            resource.getQuantity() - 1);
+                    inventory.add(i, resource);
+                }
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public boolean isOperational() {
+        return fuel > 0 && oxygen > 0 && health > 0;
+    }
+}
