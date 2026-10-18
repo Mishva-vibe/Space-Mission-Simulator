@@ -30,6 +30,16 @@ public int getMissionId() {
         return rewardPoints;
     }
 
+
+     public void displayMission() {
+        System.out.println("\nMission ID: " + missionId);
+        System.out.println("Mission: " + missionName);
+        System.out.println("Planet: " + planetName);
+        System.out.println("Objective: " + description);
+        System.out.println("Reward: " + rewardPoints + " points");
+    }
+}
+
     public String getDescription() {
         return description;
     }
