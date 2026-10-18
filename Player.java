@@ -12,3 +12,14 @@ public String getResourceName() {
 
     public int getQuantity() {
       
+public void addQuantity(int amount) {
+        if (amount > 0) {
+            quantity += amount;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return resourceName + " : " + quantity;
+    }
+}
