@@ -116,3 +116,29 @@ public class GameManager {
             }
 
             int id = dao.registerPlayer(name);
+
+        if (id != -1) {
+                player = dao.loadPlayer(id);
+                System.out.println("Registration successful!");
+            }
+
+        } else if (choice == 2) {
+            System.out.print("Enter your player ID: ");
+
+            try {
+                int id = Integer.parseInt(scanner.nextLine().trim());
+                player = dao.loadPlayer(id);
+
+                if (player == null) {
+                    System.out.println("Player not found.");
+                } else {
+                    System.out.println("Welcome back, "
+                            + player.getPlayerName() + "!");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid player ID.");
+            }
+        } else {
+            System.out.println("Invalid choice.");
+        }
+    }
