@@ -14,3 +14,22 @@ public class Mission {
         this.rewardPoints = rewardPoints;
         this.description = description;
     }
+public int getMissionId() {
+        return missionId;
+    }
+
+    public String getMissionName() {
+        return missionName;
+    }
+
+    public String getPlanetName() {
+        return planetName;
+    }
+
+    public int getRewardPoints() {
+        return rewardPoints;
+    }
+
+    public String getDescription() {
+        return description;
+    }
