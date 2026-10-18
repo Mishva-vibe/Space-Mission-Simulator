@@ -142,3 +142,66 @@ public class GameManager {
             System.out.println("Invalid choice.");
         }
     }
+private void displayMenu() {
+        System.out.println("\n===== MAIN MENU =====");
+        System.out.println("1. View Player Profile");
+        System.out.println("2. View Spaceship Status");
+        System.out.println("3. Explore Planets");
+        System.out.println("4. View Available Missions");
+        System.out.println("5. Start Mission");
+        System.out.println("6. View Inventory");
+        System.out.println("7. View Mission History");
+        System.out.println("8. View Leaderboard");
+        System.out.println("9. Save Game");
+        System.out.println("10. Exit");
+        System.out.print("Enter your choice: ");
+    }
+
+    private void explorePlanet() throws SQLException {
+        explorationSystem.displayPlanets();
+
+        System.out.print("Enter planet name: ");
+        String planetName = scanner.nextLine().trim();
+
+        boolean explored =
+                explorationSystem.explore(player, planetName);
+
+        if (explored) {
+            saveGame();
+        }
+    }
+
+    private void showMissions() throws SQLException {
+        ArrayList<Mission> missions = dao.getMissions();
+
+        System.out.println("\n--- AVAILABLE MISSIONS ---");
+
+    for (Mission mission : missions) {
+            mission.displayMission();
+        }
+    }
+
+    private void startMission() throws SQLException {
+        ArrayList<Mission> missions = dao.getMissions();
+
+        if (missions.isEmpty()) {
+            System.out.println("No missions available.");
+            return;
+        }
+
+        showMissions();
+
+        System.out.print("Enter mission ID: ");
+
+        int missionId;
+
+        try {
+            missionId = Integer.parseInt(scanner.nextLine().trim());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid mission ID.");
+            return;
+        }
+
+        Mission selected = null;
+
+        for (Mission mission : missions) {
