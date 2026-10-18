@@ -1,25 +1,13 @@
-public class Resource {
-    private String resourceName;
-    private int quantity;
+public class Player {
+    private int playerId;
+    private String playerName;
+    private int score;
+    private Spaceship spaceship;
 
-    public Resource(String resourceName, int quantity) {
-        this.resourceName = resourceName;
-        this.quantity = quantity;
+    public Player(int playerId, String playerName) {
+        this.playerId = playerId;
+        this.playerName = playerName;
+        this.score = 0;
+        this.spaceship = new Spaceship("Explorer-1");
     }
-public String getResourceName() {
-        return resourceName;
-    }
-
-    public int getQuantity() {
-      
-public void addQuantity(int amount) {
-        if (amount > 0) {
-            quantity += amount;
-        }
-    }
-
-    @Override
-    public String toString() {
-        return resourceName + " : " + quantity;
-    }
-}
+    
