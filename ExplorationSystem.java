@@ -30,3 +30,19 @@ planets.add(new Planet(
 
     public void displayPlanets() {
         System.out.println("\n--- AVAILABLE PLANETS ---");
+for (int i = 0; i < planets.size(); i++) {
+            System.out.println((i + 1) + ". "
+                    + planets.get(i).getName());
+        }
+    }
+
+    public boolean explore(Player player, String targetPlanet) {
+        Spaceship ship = player.getSpaceship();
+        Planet selectedPlanet = null;
+
+        for (Planet planet : planets) {
+            if (planet.getName().equalsIgnoreCase(targetPlanet)) {
+                selectedPlanet = planet;
+                break;
+            }
+        }
