@@ -6,3 +6,9 @@ public class Resource {
         this.resourceName = resourceName;
         this.quantity = quantity;
     }
+public String getResourceName() {
+        return resourceName;
+    }
+
+    public int getQuantity() {
+      
