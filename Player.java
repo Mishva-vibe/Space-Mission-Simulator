@@ -21,3 +21,18 @@ public class Player {
     public int getPlayerId() {
         return playerId;
     }
+ public String getPlayerName() {
+        return playerName;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public Spaceship getSpaceship() {
+        return spaceship;
+    }
+
+    public void setPlayerId(int playerId) {
+        this.playerId = playerId;
+    }
