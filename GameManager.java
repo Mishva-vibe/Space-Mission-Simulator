@@ -230,3 +230,27 @@ private void displayMenu() {
 
         if (success && player.getSpaceship().isOperational()) {
             player.addScore(selected.getRewardPoints());
+dao.updateMissionStatus(
+                    player.getPlayerId(),
+                    selected.getMissionId(),
+                    "COMPLETED");
+
+            System.out.println("Mission completed!");
+            System.out.println("Reward: "
+                    + selected.getRewardPoints() + " points");
+        } else {
+            System.out.println(
+                    "Mission unsuccessful or incomplete. "
+                    + "Try again later.");
+        }
+
+        saveGame();
+    }
+
+    private void saveGame() throws SQLException {
+        if (player != null) {
+            dao.saveGame(player);
+            System.out.println("Game saved successfully!");
+        }
+    }
+}
