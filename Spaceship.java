@@ -19,3 +19,20 @@ public class Spaceship {
         this.health = Math.max(0, Math.min(100, health));
         inventory = new ArrayList<>();
     }
+
+     public String getSpaceshipName() {
+        return spaceshipName;
+    }
+
+    public int getFuel() {
+        return fuel;
+    }
+
+    public int getOxygen() {
+        return oxygen;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
