@@ -14,3 +14,19 @@ public class ExplorationSystem {
 
         planets.add(new Planet(
                 "Mars", "The Red Planet with rocky terrain.", 3));
+planets.add(new Planet(
+                "Europa", "An icy moon that may contain water.", 6));
+
+        planets.add(new Planet(
+                "Titan", "A moon with a dense atmosphere.", 5));
+
+        planets.add(new Planet(
+                "Kepler-186f", "A distant exoplanet.", 9));
+    }
+
+    public ArrayList<Planet> getPlanets() {
+        return new ArrayList<>(planets);
+    }
+
+    public void displayPlanets() {
+        System.out.println("\n--- AVAILABLE PLANETS ---");
