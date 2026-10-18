@@ -21,7 +21,7 @@ public class Player {
     public int getPlayerId() {
         return playerId;
     }
- public String getPlayerName() {
+    public String getPlayerName() {
         return playerName;
     }
 
@@ -36,3 +36,20 @@ public class Player {
     public void setPlayerId(int playerId) {
         this.playerId = playerId;
     }
+ public void setSpaceship(Spaceship spaceship) {
+        this.spaceship = spaceship;
+    }
+
+    public void addScore(int points) {
+        if (points > 0) {
+            score += points;
+        }
+    }
+
+    public void displayProfile() {
+        System.out.println("\n--- PLAYER PROFILE ---");
+        System.out.println("Player ID: " + playerId);
+        System.out.println("Name: " + playerName);
+        System.out.println("Score: " + score);
+    }
+}
