@@ -26,3 +26,15 @@ public class CombatSystem {
             System.out.println("2. Defend");
             System.out.println("3. Escape");
             System.out.print("Choose your action: ");
+int choice;
+
+            try {
+                choice = Integer.parseInt(scanner.nextLine().trim());
+            } catch (NumberFormatException e) {
+                System.out.println("Enter a valid number.");
+                continue;
+            }
+
+            if (choice == 1) {
+                int damage = 15 + random.nextInt(16);
+                alien.takeDamage(damage);
