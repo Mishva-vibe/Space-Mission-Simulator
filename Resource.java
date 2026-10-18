@@ -7,3 +7,16 @@ public class Resource {
         this.quantity = quantity;
     }
 
+  public String getResourceName() {
+        return resourceName;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void addQuantity(int amount) {
+        if (amount > 0) {
+            quantity += amount;
+        }
+    }
