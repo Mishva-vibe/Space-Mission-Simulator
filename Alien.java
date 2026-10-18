@@ -9,3 +9,14 @@ public class Alien {
         this.attackPower = attackPower;
     }
   
+ public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
