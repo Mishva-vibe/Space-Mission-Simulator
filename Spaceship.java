@@ -44,3 +44,22 @@ public class Spaceship {
         System.out.println("Health: " + health);
     }
 
+    public boolean consumeFuel(int amount) {
+        if (amount <= 0 || fuel < amount) {
+            System.out.println("Not enough fuel!");
+            return false;
+        }
+
+        fuel -= amount;
+        return true;
+    }
+
+    public boolean consumeOxygen(int amount) {
+        if (amount <= 0 || oxygen < amount) {
+            System.out.println("Not enough oxygen!");
+            return false;
+        }
+
+        oxygen -= amount;
+        return true;
+    }
