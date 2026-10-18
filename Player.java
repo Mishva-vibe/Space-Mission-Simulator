@@ -10,4 +10,14 @@ public class Player {
         this.score = 0;
         this.spaceship = new Spaceship("Explorer-1");
     }
-    
+    public Player(int playerId, String playerName, int score,
+                  Spaceship spaceship) {
+        this.playerId = playerId;
+        this.playerName = playerName;
+        this.score = score;
+        this.spaceship = spaceship;
+    }
+
+    public int getPlayerId() {
+        return playerId;
+    }
