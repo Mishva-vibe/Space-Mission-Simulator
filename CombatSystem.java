@@ -18,3 +18,11 @@ public class CombatSystem {
                 10 + random.nextInt(16));
 
         System.out.println("\nAn alien has appeared!");
+
+    alien.displayDetails();
+
+        while (alien.isAlive() && ship.getHealth() > 0) {
+            System.out.println("\n1. Attack");
+            System.out.println("2. Defend");
+            System.out.println("3. Escape");
+            System.out.print("Choose your action: ");
