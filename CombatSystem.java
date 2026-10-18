@@ -9,3 +9,12 @@ public class CombatSystem {
         this.scanner = scanner;
     }
 
+ public boolean startCombat(Player player) {
+        Spaceship ship = player.getSpaceship();
+
+        Alien alien = new Alien(
+                "Alien-" + (random.nextInt(900) + 100),
+                60,
+                10 + random.nextInt(16));
+
+        System.out.println("\nAn alien has appeared!");
