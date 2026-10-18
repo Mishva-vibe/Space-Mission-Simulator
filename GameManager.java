@@ -50,3 +50,69 @@ public class GameManager {
                     case 3:
                         explorePlanet();
                         break;
+
+                case 4:
+                        showMissions();
+                        break;
+
+                    case 5:
+                        startMission();
+                        break;
+
+                    case 6:
+                        player.getSpaceship().displayInventory();
+                        break;
+
+                    case 7:
+                        dao.showMissionHistory(player.getPlayerId());
+                        break;
+
+                    case 8:
+                        dao.showLeaderboard();
+                        break;
+
+                    case 9:
+                        saveGame();
+                        break;
+
+                    case 10:
+                        saveGame();
+                        System.out.println("Thank you for playing!");
+                        break;
+
+                    default:
+                        System.out.println("Invalid choice.");
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("Please enter a valid number.");
+            } catch (SQLException e) {
+                System.out.println("Database error: " + e.getMessage());
+            }
+        }
+    }
+
+    private void loginOrRegister() throws SQLException {
+        System.out.println("1. Register new player");
+        System.out.println("2. Load existing player");
+        System.out.print("Choose an option: ");
+
+        int choice;
+
+        try {
+            choice = Integer.parseInt(scanner.nextLine().trim());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid choice.");
+            return;
+        }
+
+        if (choice == 1) {
+            System.out.print("Enter player name: ");
+            String name = scanner.nextLine().trim();
+
+            if (name.isEmpty() || name.length() > 50) {
+                System.out.println("Name must contain 1 to 50 characters.");
+                return;
+            }
+
+            int id = dao.registerPlayer(name);
