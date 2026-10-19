@@ -14,7 +14,8 @@ public class Mission {
         this.rewardPoints = rewardPoints;
         this.description = description;
     }
-public int getMissionId() {
+
+    public int getMissionId() {
         return missionId;
     }
 
@@ -30,16 +31,15 @@ public int getMissionId() {
         return rewardPoints;
     }
 
-
-     public void displayMission() {
-        System.out.println("\nMission ID: " + missionId);
-        System.out.println("Mission: " + missionName);
-        System.out.println("Planet: " + planetName);
-        System.out.println("Objective: " + description);
-        System.out.println("Reward: " + rewardPoints + " points");
-    }
-}
-
     public String getDescription() {
         return description;
     }
+
+    public void displayMission() {
+        System.out.println("Mission ID: " + missionId);
+        System.out.println("Mission: " + missionName);
+        System.out.println("Planet: " + planetName);
+        System.out.println("Description: " + description);
+        System.out.println("Reward: " + rewardPoints);
+    }
+}
