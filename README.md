@@ -39,3 +39,13 @@ MySQL
 JDBC (MySQL Connector/J)
 
 IntelliJ IDEA
+
+📁 Project Structure
+
+The project includes Java classes for player management, spaceships, planets, exploration, aliens, combat, missions, database access, and game control.
+
+Database setup script: space_mission_db.sql
+
+Refer to the repository's src folder for the current Java source files.
+
+
