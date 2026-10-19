@@ -1,92 +1,61 @@
 # 🚀 Space Mission Simulator
 
-A space survival game built using Core Java.
+A console-based space survival game built using Core Java and MySQL.
 
-In this game, players explore different planets, manage a spaceship, collect resources, and complete missions. They must manage fuel, oxygen, and health carefully to survive their journey through space.
+Players explore planets, manage spaceship resources, encounter aliens, and complete missions while managing fuel, oxygen, and health.
 
 ## 🌌 About the Project
 
-Space Mission Simulator is a team project created to practice Java programming and Object-Oriented Programming (OOP).
-
-We wanted to build a game where players can explore space, make decisions, and complete different challenges. The game also helps us understand how Java classes, objects, and other programming concepts work together in a real project.
+Space Mission Simulator is an academic team project designed to practice Core Java, Object-Oriented Programming (OOP), game logic, and database connectivity.
 
 ## ✨ Features
 
-- 🚀 Manage the player and spaceship.
-- 🌍 Explore different planets.
-- ⛽ Monitor fuel, oxygen, and health.
-- 💎 Collect resources during exploration.
-- 👽 Encounter aliens and face challenges.
-- 🎯 Complete missions and earn points.
-- 🔀 Make decisions that affect mission progress.
-- 🏆 Track progress and work towards completing the mission.
+- 🚀 Player and spaceship management
+- 🌍 Planet exploration
+- ⛽ Fuel, oxygen, and health management
+- 💎 Resource collection
+- 👽 Alien encounters and combat
+- 🎯 Mission progression and rewards
+- 🗄️ MySQL database integration
 
 ## 🛠️ Technologies Used
 
-- **Programming Language:** Core Java
-- **Object-Oriented Programming:** Classes, Objects, Inheritance, and Polymorphism
-- **Data Structures:** Arrays and ArrayList
-- **User Input:** Scanner
-- **Random Events:** Random class
-- **Error Handling:** Exception Handling
-
-## 🧠 Java Concepts Used
-
-This project gives us an opportunity to practice:
-
-- Classes and Objects
-- Constructors and Methods
-- Inheritance and Polymorphism
-- Arrays and ArrayList
-- Conditional Statements and Loops
-- Random Number Generation
+- Core Java
+- Object-Oriented Programming (OOP)
+- Java Collections and Scanner
 - Exception Handling
-
-These concepts are included according to the implementation of the game.
+- MySQL
+- JDBC (MySQL Connector/J)
+- IntelliJ IDEA
 
 ## 📁 Project Structure
 
-```text
-SpaceMissionSimulator/
-│
-├── src/
-│   ├── Main.java
-│   ├── Player.java
-│   ├── Spaceship.java
-│   ├── Planet.java
-│   ├── Exploration.java
-│   ├── Alien.java
-│   ├── Mission.java
-│   └── Game.java
-│
-└── README.md
-```
+The project includes Java classes for player management, spaceships, planets, exploration, aliens, combat, missions, database access, and game control.
 
-*The structure may change as the project develops.*
+Database setup script: `space_mission_db.sql`
 
-## 🎮 How to Play
+*Refer to the repository's `src` folder for the current Java source files.*
 
-1. Start the game.
-2. Begin your space mission.
-3. Choose a planet to explore.
-4. Manage your fuel, oxygen, and health.
-5. Explore locations and collect resources.
-6. Make decisions when unexpected events occur.
-7. Complete mission objectives and earn points.
-8. Try to finish your mission successfully.
+## 🗄️ Database Setup
+
+1. Install and start MySQL Server.
+2. Open MySQL Workbench.
+3. Open `space_mission_db.sql`.
+4. Execute the SQL script to create the database and required tables.
+5. Check the database name and credentials in `DatabaseConnection.java`.
+6. Ensure the MySQL JDBC driver is added to the project's dependencies.
 
 ## ▶️ How to Run
 
-**Requirements:** Java Development Kit (JDK) installed on your computer.
+**Requirements:** JDK, MySQL Server, IntelliJ IDEA (or another Java IDE), and MySQL Connector/J.
 
 1. Clone or download this repository.
-2. Open the project in a Java IDE, such as VS Code, Eclipse, or IntelliJ IDEA.
-3. Make sure all source files are in the correct folder.
-4. Compile the Java files.
-5. Run `Main.java`.
-6. Follow the instructions displayed in the console.
-
-*The exact steps may depend on the final project setup.*
+2. Open the project in IntelliJ IDEA.
+3. Configure the MySQL database using the steps above.
+4. Add the MySQL Connector/J driver to the project dependencies.
+5. Verify the database credentials in `DatabaseConnection.java`.
+6. Run `Main.java`.
+7. Follow the console instructions to play the game.
 
 ## 👥 Team Members and Responsibilities
 
@@ -97,42 +66,21 @@ SpaceMissionSimulator/
 | Member 3 | Alien encounters and combat |
 | Member 4 | Mission system and game control |
 
-*Replace the member labels with your team members' names if required.*
+*Replace these labels with your actual team members' names and responsibilities.*
 
 ## 🎯 Learning Outcomes
 
-Through this project, we aim to:
-
-- Improve our understanding of Core Java.
-- Learn how to organize code into different classes.
-- Practice important OOP concepts.
-- Work with arrays, ArrayList, and user input.
-- Understand game logic and decision-making.
-- Improve our debugging and problem-solving skills.
-- Gain experience working together on a Java project.
-
-## 🔮 Future Improvements
-
-We would like to improve the game by adding:
-
-- More planets and missions.
-- Spaceship upgrades.
-- Different types of aliens.
-- Save and load functionality.
-- A high-score system.
-- More random events and challenges.
+- Practice Core Java and OOP concepts.
+- Understand how multiple classes work together.
+- Implement game logic and resource management.
+- Connect a Java application to MySQL using JDBC.
+- Practice debugging and collaborative development.
 
 ## 📌 Project Details
 
 - **Project Name:** Space Mission Simulator
 - **Project Type:** Academic Team Project
-- **Programming Language:** Core Java
+- **Language:** Core Java
+- **Database:** MySQL
 - **Application Type:** Console-Based Game
-- **Difficulty Level:** Intermediate Beginner
 - **Team Size:** 4 Members
-
----
-
-This project is an opportunity for us to learn Java by building something interactive and fun.
-
-🚀 *Explore planets, manage your resources, and complete your mission!*
